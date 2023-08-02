@@ -1,6 +1,5 @@
 class Episodio
 {
-  public static int numeroEpisodios { get; private set; } = 1;
   public int Numero { get; set; }
   public int Duracao { get; set; }
   public int Ordem { get; }
@@ -10,9 +9,7 @@ class Episodio
 
   public Episodio(int ordem, string titulo, int duracao)
   {
-    Numero = numeroEpisodios;
     Duracao = duracao;
-    numeroEpisodios++;
     Ordem = ordem;
     Titulo = titulo;
   }

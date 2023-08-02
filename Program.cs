@@ -24,14 +24,16 @@
 // albumDoQueen.ExibirMusicasDoAlbum();
 // queen.ExibirDiscografia();
 
-Episodio episodio1 = new Episodio(1, "O Futuro do Sei Lá", 45);
+Episodio episodio1 = new Episodio(6, "O Futuro do Sei Lá", 45);
 episodio1.AdicionarConvidados("Fábio Moura");
 episodio1.AdicionarConvidados("Ednaldo Pereira");
 episodio1.AdicionarConvidados("Casimiro");
-Console.WriteLine(episodio1.Resumo);
 
-Episodio episodio2 = new Episodio(2, "Sus", 60);
+Episodio episodio2 = new Episodio(3, "Sus", 60);
 episodio2.AdicionarConvidados("André Silva");
 episodio2.AdicionarConvidados("Seu Madruga");
-episodio2.AdicionarConvidados("Sei lá mlk");
-Console.WriteLine(episodio2.Resumo);
+
+Podcast podcast = new("Podcast Especial", "Daniel");
+podcast.AdicionarEpisodio(episodio1);
+podcast.AdicionarEpisodio(episodio2);
+podcast.ExibirDetalhes();
