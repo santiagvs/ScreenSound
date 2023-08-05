@@ -1,3 +1,5 @@
+namespace ScreenSound.Modelos;
+
 class Episodio
 {
   public int Numero { get; set; }
